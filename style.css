@@ -4,6 +4,8 @@
   --foreground: #202023;
   --secondary: #626269;
   --focus: #3434c9;
+  --link-rule: #b0b0aa;
+  --current-rule: #8a8a80;
   font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   font-size: 13px;
   line-height: 1.65;
@@ -15,6 +17,8 @@
     --foreground: #bdbdb7;
     --secondary: #92928c;
     --focus: #b7b7a8;
+    --link-rule: #666660;
+    --current-rule: #74746b;
   }
 }
 * { box-sizing: border-box; }
@@ -28,6 +32,9 @@ h2::before { content: "# "; color: var(--secondary); }
 h3 { font-weight: 600; }
 a { color: inherit; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 a:hover { text-decoration-style: dotted; }
+.experience h3 a, .education h3 a { text-decoration-color: var(--link-rule); }
+.experience h3 a:hover, .education h3 a:hover,
+.experience h3 a:focus-visible, .education h3 a:focus-visible { text-decoration-color: currentColor; }
 a:focus, a:focus-visible { outline: 2px solid var(--focus); outline-offset: 5px; border-radius: 1px; }
 ::selection { background: #ffff00; color: #151516; }
 .masthead { line-height: 1.4; text-transform: uppercase; }
@@ -35,6 +42,9 @@ header { margin-bottom: 48px; }
 section + section { margin-top: 36px; }
 .entries { list-style: none; padding: 0; margin: 0; }
 .entries li + li { margin-top: 24px; }
+.current-role { border-left: 2px solid var(--current-rule); padding-left: 14px; margin-left: -16px; }
+.current-role h3 { font-size: 15px; line-height: 1.45; }
+.current-label { margin-left: 8px; color: var(--secondary); font-size: 10px; font-weight: 400; letter-spacing: .06em; text-transform: uppercase; }
 .date, .stack, .status, .separator { color: var(--secondary); }
 .date { white-space: nowrap; }
 .stack { margin-top: 5px; }
