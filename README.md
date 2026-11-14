@@ -8,7 +8,7 @@ A small, static personal website inspired by the typography and composition of [
 python3 -m http.server 4173 --bind 127.0.0.1
 ```
 
-Open http://127.0.0.1:4173. Content is in `index.html`; appearance is in `style.css`. The site follows the device's light/dark setting, with a deep navy background in dark mode. Reduced-motion preferences disable the cursor animation.
+Open http://127.0.0.1:4173. Content is in `index.html`; appearance is in `style.css`. The site follows the device's light/dark setting, with a charcoal background and muted warm-gray text in dark mode. Reduced-motion preferences disable the cursor animation.
 
 ## Publishing
 

@@ -11,10 +11,10 @@
 }
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #050d1a;
-    --foreground: #cdd7e5;
-    --secondary: #94a3ba;
-    --focus: #93c5fd;
+    --background: #1b1b1a;
+    --foreground: #bdbdb7;
+    --secondary: #92928c;
+    --focus: #b7b7a8;
   }
 }
 * { box-sizing: border-box; }
